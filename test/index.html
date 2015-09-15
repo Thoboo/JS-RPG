@@ -1,0 +1,193 @@
+
+<html>
+    <body>
+        <style>
+            img {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: -o-crisp-edges;
+                image-rendering: -webkit-optimize-contrast;
+                -ms-interpolation-mode: nearest-neighbor;
+                image-rendering: pixelated;
+            }
+            
+            table {
+                margin: 0;
+                padding: 0;
+                border-spacing: 0 0;
+                border-collapse: collapse;
+                border: none;
+            }
+            
+            tr {
+                height: 48px;
+                width: auto;
+                margin: 0;  
+                padding: 0;
+            }
+            
+            td {
+                width: 48px;
+                height: 48px;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #map {
+                border: 2px solid black;    
+                
+            }
+        </style>
+        <script src="script.js"></script>
+            <table id="output">
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                    <td><img src="tiles/grass.png"></td>
+                </tr>
+            </table>
+    </body>
+</html>

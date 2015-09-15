@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSFight Mobile</title>
+        <!--
+        <script type="text/javascript">
+        <!--
+        if (screen.width >= 699) {
+        document.location = "index.html";
+        }
+        //-->
+        <script src="script_mobile.js" lang="javascript"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet_mobile.css">
+    </head>
+    <body id="body" onload="setup()">
+        <div style="background-color: #ffc073;">
+            <p style="font-size:5em" align="center"><b>JSFight Mobile</b></p>
+        </div>
+        <div style="background-color: #ffc073;">
+            <p id="levelDisplay">Level</p>
+            <p style="font-weight:bold">You</p>
+            <p id="healthDisplay">HP VALUE</p>
+            <br>
+            <p id="message">---</p>
+            <br>
+            <p><b id="enemyNameDisplay">Enemy</b></p>
+            <p id="ehealthDisplay">HP VALUE</p>
+            
+        </div>
+        <div>
+            <table>
+                <tr id="attackButtons">
+                    <td id="attackButton1" onclick="attack(attackChance[0], attackStrength[0])"><p>Simple Attack</p></td>
+                    <td id="attackButton2" onclick="attack(attackChance[1], attackStrength[1])"><p>Intermediate Attack</p></td>
+                    <td id="attackButton3" onclick="attack(attackChance[2], attackStrength[2])"><p>Advanced Attack</p></td>
+                </tr>
+                <br>
+                <tr id="bonusButtons">
+                    <td id="bonusHealth" onclick="bonusHealth()"><p>Health</p></td>
+                    <td id="bonusStrength" onclick="bonusStrength()"><p>Attack</p></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <p id="footer" align="center">Written by Thomas Booij.</p>
+    </body>
+</html>

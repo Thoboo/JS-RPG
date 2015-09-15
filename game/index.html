@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <title>JS-RPG</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="../bower_components/cookies-js/dist/cookies.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="start.js"></script>
+    <script src="cookies.js"></script>
+</head>
+
+<body onload="toggleDevtools();" id="body" height="100%">
+    <div id="header-cell" class="table-cell">
+        <h1>JS-RPG</h1>
+    </div>
+    <div id="menu">
+        <table>
+            <tr colspan="2">
+                <td class="table-cell" width="50%" id="startGameButton" onclick="setup(0)">
+                    <div width="100%" height="100%">
+                        <h1>Start Game</h1>
+                    </div>
+                </td>
+                <td class="table-cell" width="50%" id="loadGameButton" onclick="setup(1)">
+                    <div width="100%" height="100%">
+                        <h1>Load game<sup>BETA</sup></h1>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table border="0" width="100%" height="100%" id="gameTable">
+        <tr colspan="2">
+            <td class="table-cell" id="left-column1" width="60%">
+                <p id="levelDisplay"></p>
+                <p>You</p>
+                <p id="healthDisplay"></p>
+                <!--
+                <button id="attackButton1" onclick="attack(attackChance[0], attackStrength[0])">Simple Attack</button>
+                <button id="attackButton2" onclick="attack(attackChance[1], attackStrength[1])">Intermediate Attack</button>
+                <button id="attackButton3" onclick="attack(attackChance[2], attackStrength[2])">Hard Attack</button>
+                -->
+                <br>
+                <table id="attackButtons">
+                    <tr>
+                        <td class="fancyButton" id="attackButton1" onclick="attack(attackChance[0], attackStrength[0])">Simple Attack</td>
+                        <td class="fancyButton" id="attackButton2" onclick="attack(attackChance[1], attackStrength[1])">Intermediate Attack</td>
+                        <td class="fancyButton" id="attackButton3" onclick="attack(attackChance[2], attackStrength[2])">Hard Attack</td>
+                        <!--<td class="fancyButton" id="statsButton" onclick="showStats()">Show/Hide Stats</td>-->
+                    </tr>
+                </table>
+                <div id="startButton" class="fancyButton" onclick="startGame();">Kick open the door!</div>
+            </td>
+            <td class="table-cell" id="statsDisplay1">
+                <h2 id="statsName">You</h2>
+                <p id="statsClass"></p>
+                <p id="statsHealth"></p>
+                <br>
+                <p>Attack Strengths:</p>
+                <p id="statsAttack1"></p>
+                <p id="statsAttack2"></p>
+                <p id="statsAttack3"></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-cell" id="left-column2" width="60%">
+                <br>
+                <p id="message">This is the message-field.</p>
+                <!--
+                <button id="bonusHealth" onclick="bonusHealth()">Health</button>
+                <button id="bonusStrength" onclick="bonusStrength()">Strength</button>
+                -->
+                <table>
+                    <tr>
+                        <td class="fancyButton" id="bonusHealth" onclick="bonusHealth()">Bonus Health</td>
+                        <td class="fancyButton" id="bonusStrength" onclick="bonusStrength()">Bonus Strength</td>
+                    </tr>
+                </table>
+                <br>
+            </td>
+            <td class="table-cell" id="statsDisplay2" rowspan="2">
+                <h2 id="enemystatsName">Enemy</h2>
+                <p id="enemystatsHealth"></p>
+                <br>
+                <p>Attack Strengths:</p>
+                <p id="enemystatsAttack1"></p>
+                <p id="enemystatsAttack2"></p>
+                <p id="enemystatsAttack3"></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-cell" id="left-column3">
+                <p id="enemyNameDisplay">Enemy</p>
+                <p id="ehealthDisplay">Enemy HP: ??</p>
+                <br>
+                <!--
+                <button id="saveButton" onclick="saveParameters()">Save Game</button>
+                -->
+            </td>
+        </tr>
+    </table>
+    <p id="footer">Written by Thomas <a onclick="toggleDevtools()">Booij</a> (2015) - Released under MIT license (open-source)</p>
+    <p id="cookieMessage" style="font-color:white"></p>
+    <table class="table-cell" id="devTools" width="50%">
+        <tr>
+            <td>Debugging Tools</td>
+        </tr>
+        <tr>
+            <td>
+                <button id="annihilationButton" onclick="attack(0,10000000000000000000)">Annihilation</button>
+            </td>
+            <td>
+                <button onclick="showStats()">Show/Hide Stats</button>
+            </td>
+            <td>
+                <button onclick="saveGame()">Save game</button>
+            </td>
+            <td>
+                <button onclick="loadGame()">Load game</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

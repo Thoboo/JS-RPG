@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="bower_components/cookies-js/dist/cookies.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/typed.js/dist/typed.min.js"></script>-->
+        <title>JS-RPG</title>
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body onload="characterDisplay()" id="body">
+        <table border="0" width="100%" height="100%" id="contentTable">
+        <tr>
+            <td colspan="3" class="table-cell">
+                
+                <h1 onclick="easter_egg()" id="header">JS-RPG</h1>
+            </td>
+        </tr>
+        <tr colspan="2">
+            <td class="table-cell" width="35%" id="startButton" onclick="goToGame()">
+                <div width="100%" height="100%">
+                    <h1>Start Game</h1>
+                </div>
+            </td>
+            <td class="table-cell" width="35%" id="charButton" onclick="goToChar()">
+                <div width="100%" height="100%">
+                    <h1>Character Creation<sup>BETA</sup></h1>
+                </div>
+            </td>
+            <td id="characterDisplay" class="table-cell" width="30%">
+                <h1>Your character</h1>
+                <p id="charName"></p>
+                <p id="charClass"></p>
+                <p id="charGender"></p>
+                <br>
+                <div id="removeCharButton" class="fancyButton" onclick="removeCharacter()"><p>Remove Character</p></div>
+            </td>
+        </tr>
+        </table>
+        <p id="footer">Written by Thomas Booij (2015) - Released under MIT license (open-source)</p>
+    </body>
+</html>

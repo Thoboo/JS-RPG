@@ -1,0 +1,86 @@
+* {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+#body {
+    background-image: url(images/stylegrass.jpg);
+    background-repeat: repeat;
+}
+
+#header {
+    text-align: center;    
+}
+
+.table-cell {
+    background-color: #ffc073;
+    border-radius: 10px;
+}
+
+#footer {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+#startButton {
+    text-align: center;
+}
+
+#startButton:hover {
+    background-color: #009933;
+    color: white;
+}
+
+#startButton:active {
+    background-color: #006B24;
+    color: white;
+}
+
+#charButton {
+    text-align: center;
+}
+
+#charButton:hover {
+    background-color: #FF6600;
+    color: white;
+}
+
+#charButton:active {
+    background-color: #CC5200;
+    color: white;
+}
+
+/*Style of removeCharButton*/
+
+#removeCharButton {
+    background-color: #ff0000;
+    color: white;
+    padding: 0px;
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 60%;
+}
+
+#removeCharButton:hover {
+    background-color: #d20000;
+}
+
+#removeCharButton:active {
+    background-color: #ab0000;
+}
+
+/*Overall style of my fancy buttons!*/
+
+.fancyButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 10%;
+    text-align: center;
+}
+
+sup {
+    font-size: 0.4em;
+    font-weight: normal;
+}
+            
+            

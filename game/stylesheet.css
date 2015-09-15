@@ -1,0 +1,204 @@
+* {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+sup {
+    font-size: 0.4em;
+    font-weight: normal;
+}
+
+#body {
+    /*background-color: #3b9800;*/
+    background-image: url(../images/stylegrass.jpg);
+    background-repeat: repeat;
+
+}
+
+#menu {
+    /*display: none;*/
+    width: 100%;
+}
+
+#gameTable {
+    display: none;
+}
+
+.table-cell {
+    background-color: #ffc073;
+    border-radius: 10px;
+}
+
+#footer {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+/*Style of attackButton1*/
+
+#attackButton1 {
+    background-color: #37a300;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#attackButton1:hover {
+    background-color: #309000;
+}
+
+#attackButton1:active {
+    background-color: #277400;
+}
+
+/*Style of attackButton2*/
+
+#attackButton2 {
+    background-color: #ff8d00;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#attackButton2:hover {
+    background-color: #e19300;
+}
+
+#attackButton2:active {
+    background-color: #d28a00;
+}
+
+/*Style of attackButton3*/
+
+#attackButton3 {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#attackButton3:hover {
+    background-color: #d20000;
+}
+
+#attackButton3:active {
+    background-color: #ab0000;
+}
+
+/*Style of statsButton*/
+
+#statsButton {
+    background-color: #00bde5;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px; 
+}
+
+#statsButton:hover {
+    background-color: #00b6d0;
+}
+
+#statsButton:active {
+    background-color: #009db4;
+}
+
+/*Style of bonusHealth button*/
+
+#bonusHealth {
+    background-color: #37a300;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#bonusHealth:hover {
+    background-color: #309000;
+}
+
+#bonusHealth:active {
+    background-color: #277400;
+}
+
+/*Style of bonusStrength button*/
+
+#bonusStrength {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#bonusStrength:hover {
+    background-color: #d20000;
+}
+
+#bonusStrength:active {
+    background-color: #ab0000;
+}
+
+/*Style of bonusStrength button*/
+
+#startButton {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+#startButton:hover {
+    background-color: #d20000;
+}
+
+#startButton:active {
+    background-color: #ab0000;
+}
+
+/*Overall style of my fancy buttons!*/
+
+.fancyButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 10%;
+    text-align: center;
+}
+
+#header {
+    text-align: center;  
+     
+}
+
+#starGameButton {
+    text-align: center;
+}
+
+#startGameButton:hover {
+    background-color: #009933;
+    color: white;
+}
+
+#startGameButton:active {
+    background-color: #006B24;
+    color: white;
+}
+
+#loadGameButton {
+    text-align: center;
+}
+
+#loadGameButton:hover {
+    background-color: #FF6600;
+    color: white;
+}
+
+#loadGameButton:active {
+    background-color: #CC5200;
+    color: white;
+}

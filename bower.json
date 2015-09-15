@@ -1,0 +1,25 @@
+{
+  "name": "JSFight",
+  "version": "0.0.0",
+  "description": "A little fighting game written with web technologies.",
+  "main": "index.html",
+  "keywords": [
+    "jsfight"
+  ],
+  "authors": [
+    "Thomas Booij"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cookies-js": "~1.2.1",
+    "jquery": "~2.1.4",
+    "typed.js": "*"
+  }
+}

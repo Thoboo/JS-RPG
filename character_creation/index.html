@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="../images/favicon.png"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <title>JS-RPG</title>
+        <script type="text/javascript">
+        </script>
+        <script src="script.js"></script>
+        <script src="../bower_components/cookies-js/dist/cookies.min.js"></script>
+        <style>
+            * {
+                font-family: 'Open Sans', sans-serif;  
+            }
+            
+            #body {
+                background-image: url(../images/darkbrick.jpg);
+                background-repeat: repeat;
+            }
+            
+            table {
+                width: 100%;
+            }
+            
+            tr {
+                width: 100%;
+            }
+
+            .table-cell {
+                background-color: #ffc073;
+                /*box-shadow: 0px 0px 10px black;*/
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            #footer {
+                color: white;
+                text-shadow: 1px 1px black;
+            }
+            
+            #header {
+                text-align: center;    
+            }
+            
+            .classButton {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body id="body" onload="setup()">
+        <table border="0" width="100%" height="100%">
+        <tr>
+            <td class="table-cell">
+                <h1 id="header">Character Creation</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="table-cell" id="infoCell">
+                <p>This page will help you create your very own unique character which will be used in this game. Depending on the choices you'll make, your game experience will be altered. Choose wisely, but remember that you can always create a new character on this page.</p>
+                <br>
+                <p>Your character will have a couple of unique hallmarks. These include:</p>
+                <ul>
+                    <li>Your name</li>
+                    <li>Your gender</li>
+                    <li>Your class (warrior, mage, thief or cleric)</li>
+                </ul>
+                <p>Who your character will be is up to you. Welcome to JS-RPG!</p>
+                <br>
+                <button onclick="moveToGender()">Click here to start the process</button>
+            </td>    
+        </tr>
+        <tr id="genderCell">
+            <td class="table-cell">
+                <h2>Gender</h2>
+                <br>
+                <p>Do you want your character to be male or female?</p>
+                <br>
+                <button id="male" onclick="moveToName_male()">Male</button>
+                <button id="female" onclick="moveToName_female()">Female</button>
+                <!--
+                <form action="">
+                    <input type="radio" name="sex" value="male" id="male">Male<br>
+                    <input type="radio" name="sex" value="female" id="female">Female
+                </form>
+                
+                <br>
+                <button onclick="moveToName()">Next step: Name</button>
+                -->
+            </td>
+        </tr>
+        <tr id="nameCell">
+            <td class="table-cell">
+                <h2>Name</h2>
+                <br>
+                <p>Please write down your preferred name. Note that the name will always have the form: [name] the [profession/type/etc.].</p>
+                <p>Example: Thomas the Not-Avenger</p>
+                <br>
+                <form>
+                    <input id="name" type="text">
+                    <b>the</b>
+                    <input id="characteristic" type="text">
+                </form>
+                <br>
+                <button onclick="moveToClass()">Next step: Class</button>
+                <br>
+            </td>
+        </tr>
+        <tr id="classCell">
+            <td class="table-cell">
+                <h2>Class</h2>
+                <br>
+                <p>This is the hardest part: choosing your class. A class gives you certain abilities and characteristics. Please make this a thoughtful choice.</p>
+                <br>
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <button onclick="moveToEnd(0)" id="warrior" class="classButton">Warrior</button>
+                        </td>
+                        <td>
+                            <button onclick="moveToEnd(1)" id="mage" class="classButton">Mage</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="moveToEnd(2)" id="cleric" class="classButton">Cleric</button>
+                        </td>
+                        <td>
+                            <button onclick="moveToEnd(3)" id="thief" class="classButton">Thief</button>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>        
+        </tr>
+        <tr id="endCell">
+            <td class="table-cell">
+                <h2><u>Your character</u></h2>
+                <br>
+                <p id="nameDisplay">Name:</p>
+                <p id="genderDisplay">Gender:</p>
+                <p id="classDisplay">Class:</p>
+                <br>
+                <button onclick="saveCharacter();">Save your character and return to menu</button>
+                <br>
+            </td>
+        </tr>
+        </table>
+        <p id="footer">Written by Thomas Booij (2015) - Released under MIT license (open-source)</p>
+    </body>
+</html>
