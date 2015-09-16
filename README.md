@@ -24,3 +24,5 @@ Yes, it does. Since document.cookie is such a fuss to use, this website uses Coo
 It's perfect for these purposes.
 
 To go to the according GitHub page, please visit https://github.com/ScottHamper/Cookies
+
+In addition, this games uses JQuery and the typed.js plugin.
